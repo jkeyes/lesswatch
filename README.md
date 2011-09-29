@@ -27,6 +27,7 @@ stable version of [node.js](http://nodejs.org/#download) and
 extract the contents from the archive: `tar xf node-v0.4.12.tar.gz`.
 
 Then:
+
     $ cd node-v0.4.12
     $ ./configure
     $ make
