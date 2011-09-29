@@ -158,6 +158,14 @@ def lesswatch(watch_dir):
         observer.stop()
     observer.join()
 
+def main():
+    import argparse
+
+    parser = argparse.ArgumentParser(description='Watch directory for LESS file changes')
+    parser.add_argument('dir', help='dir help')
+    args = parser.parse_args()
+    lesswatch(args.dir)
+
 if __name__ == "__main__":
     import sys
     lesswatch(sys.argv[1])
